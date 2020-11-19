@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   # resourcesでルーティングを自動設定
   # resources パスのシンボル, onlyオプション
   resources :users, only: [ :edit, :update]
+
+  resources :rooms, only: [ :new, :create]
 end
