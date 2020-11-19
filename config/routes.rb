@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'messages/index'
+  # ルートパスへのアクセスが有った場合、messagesコントローラーのindexアクションを呼ぶ
+  root to: "messages#index"
 end
